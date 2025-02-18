@@ -1,3 +1,5 @@
 .vscode/
 
 *.exe
+# Window Powershell에서 exe 파일 제거하는 명령어
+# Get-ChildItem -Path . -Filter "*.exe" -Recurse -File | Remove-Item -Force
