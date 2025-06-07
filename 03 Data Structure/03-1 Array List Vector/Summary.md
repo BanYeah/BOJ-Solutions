@@ -19,4 +19,15 @@ A.clear();
 // 정보
 A.size();
 A.at(0);
+
+// 정렬
+#include <algorithm>
+std::vector<int> v = {5, 2, 9, 1, 5, 6};
+std::sort(v.begin(), v.end(), std::greater<int>()); // 내림차순 정렬
+
+
+bool customCompare(int a, int b) {
+    return a > b; // 내림차순 정렬
+}
+std::sort(v.begin(), v.end(), customCompare); // 비교 함수 이용
 ```
